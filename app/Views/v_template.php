@@ -1,20 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+    <html lang="en">
+        <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title><?= $judul ?></title>
-        <link href="<?= base_url('sb-admin') ?>/css/styles.css" rel="stylesheet" />
+        <link href="<?= base_url('sbadmin') ?>/css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('sbadmin') ?>/js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -52,7 +52,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <div class="sb-sidenav-menu-heading">Dengan Database</div>
+                            <div class="sb-sidenav-menu-heading">Tidak Menggunakan Database</div>
 
                             <!-- view map -->
                             <a class="nav-link" href="<?= base_url('Home/viewMap') ?>">
@@ -96,6 +96,12 @@
                                 geojson
                             </a>
 
+                            <!-- polygon -->
+                            <a class="nav-link" href="<?= base_url('Home/geojson2') ?>">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-globe"></i></i></div>
+                                geojson2
+                            </a>
+                            
                             <!-- getcoordinat -->
                             <a class="nav-link" href="<?= base_url('Home/getcoordinat') ?>">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-location-arrow"></i></i></div>
@@ -108,15 +114,18 @@
                                 getcoordinat2
                             </a>
 
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a>
+                            <div class="sb-sidenav-menu-heading">Menggunakan Database</div>
+                            <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a> -->  
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <!-- <a class="nav-link" href="<?= base_url('Lokasi/data_Lokasi') ?>">Static Navigation</a> -->
+                                    <a class="nav-link" href="<?= base_url('lokasi/inputLokasi') ?>">input lokasi
+                                        
+                                    </a>
+                                </nav>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
