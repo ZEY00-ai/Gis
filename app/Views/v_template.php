@@ -15,6 +15,9 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('sbadmin') ?>/js/scripts.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="<?= base_url('sbadmin') ?>/js/datatables-simple-demo.js"></script>
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -122,9 +125,9 @@
                             </a> -->  
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <!-- <a class="nav-link" href="<?= base_url('Lokasi/data_Lokasi') ?>">Static Navigation</a> -->
-                                    <a class="nav-link" href="<?= base_url('lokasi/inputLokasi') ?>">input lokasi
-                                        
-                                    </a>
+                                    <a class="nav-link" href="<?= base_url('lokasi/inputLokasi') ?>">input lokasi</a>
+                                    <a class="nav-link" href="<?= base_url('lokasi/index') ?>">data lokasi</a>
+                                    <a class="nav-link" href="<?= base_url('lokasi/pemetaanLokasi') ?>">pemetaan lokasi</a>
                                 </nav>
                         </div>
                     </div>
